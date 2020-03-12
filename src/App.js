@@ -9,11 +9,10 @@ const App = () => {
     'This should be 41 characters and 8 words.'
   )
 
-  // lägg in callback...?
   useEffect(() => {
     setCharacters(textValue.length)
     setWords(countWords(textValue))
-  }, [characters, words, textValue])
+  }, [textValue])
 
   const changed = event => {
     setTextValue(event.target.value)
