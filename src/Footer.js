@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <div className="footer">
-      <a style={aStyle} href="https://github.com/jammar">
+      <a style={aStyle} href="https://github.com/Jammar/countingonwords">
         <FaGithub />
       </a>
     </div>
