@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script|PT+Serif&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: bisque;
+}
+
+.app {
+  text-align: center;
+}
+
+.footer {
+  position: fixed;
+  height: 40px;
+  left: 90vw;
+  bottom: 0;
+  width: 10vw;
+}
+
+.counts {
+  background: bisque;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  display: inline-flex;
+  color: black;
+  font-size: 1rem;
+  font-family: roboto, monospace;
+  margin: 5px 3vw;
+  padding: 10px;
+}
+.counts > span {
+  font-weight: 800;
+  margin: 0 5px;
+}
+
+h1 {
+  font-family: 'Oleo Script', cursive;
+  font-weight: 100;
+  font-size: 3rem;
+  line-height: 0.8;
+  margin: 3vh auto;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  border-bottom: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+textarea {
+  background: bisque;
+  font-family: 'PT Serif', serif;
+  font-size: 1.2rem;
+  height: 70vh;
+  width: 70vw;
+  min-width: 420px;
+  border-style: solid;
+  border-width: 0px;
+  color: black;
+  display: flex;
+  margin: 25px auto auto auto;
+  outline: none;
+  resize: none;
+}
+
+@media screen and (max-height: 600px) {
+  textarea {
+    height: 50vh;
+  }
+}
+@media screen and (max-height: 350px) {
+  textarea {
+    height: 35vh;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 0.6rem;
+  }
+
+  textarea {
+    min-width: 0;
+    width: 85vw;
+    /* height: 85vh; */
+  }
+
+  .counts {
+    margin: 0px 5px;
+  }
+
+  .footer {
+    height: 20px;
+    left: 80vw;
+    width: 20vw;
+  }
+}
