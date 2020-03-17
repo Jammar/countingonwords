@@ -1,21 +1,12 @@
 import React from 'react'
 import { FaGithub } from 'react-icons/fa'
 
-const Footer = () => {
-  const aStyle = {
-    borderBottom: 'none',
-    fontSize: '1.5rem',
-    color: 'black',
-    margin: '0 0 0 10px',
-  }
-
-  return (
-    <div className="footer">
-      <a style={aStyle} href="https://github.com/Jammar/countingonwords">
-        <FaGithub />
-      </a>
-    </div>
-  )
-}
+const Footer = () => (
+  <div id="footer">
+    <a id="gitlogo" href="https://github.com/Jammar/countingonwords">
+      <FaGithub />
+    </a>
+  </div>
+)
 
 export default Footer

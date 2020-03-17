@@ -13,12 +13,10 @@ body {
   text-align: center;
 }
 
-.footer {
+#footer {
   position: fixed;
-  height: 40px;
-  left: 90vw;
+  right: 10px;
   bottom: 0;
-  width: 10vw;
 }
 
 .counts {
@@ -28,22 +26,32 @@ body {
   border-radius: 2px;
   display: inline-flex;
   color: black;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: roboto, monospace;
   margin: 5px 3vw;
   padding: 10px;
+  font-weight: 100;
 }
-.counts > span {
-  font-weight: 800;
+span {
+  font-weight: 500;
   margin: 0 5px;
+}
+span:before {
+  content: '\00a0';
 }
 
 h1 {
   font-family: 'Oleo Script', cursive;
   font-weight: 100;
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 0.8;
   margin: 3vh auto;
+}
+
+a#gitlogo {
+  border-bottom: none;
+  font-size: 3rem;
+  color: black;
 }
 
 a:hover,
@@ -60,8 +68,8 @@ a:active {
 textarea {
   background: bisque;
   font-family: 'PT Serif', serif;
-  font-size: 1.2rem;
-  height: 70vh;
+  font-size: 1.5rem;
+  height: calc(70vh - 20px);
   width: 70vw;
   min-width: 420px;
   border-style: solid;
@@ -71,37 +79,47 @@ textarea {
   margin: 25px auto auto auto;
   outline: none;
   resize: none;
-}
-
-@media screen and (max-height: 600px) {
-  textarea {
-    height: 50vh;
-  }
-}
-@media screen and (max-height: 350px) {
-  textarea {
-    height: 35vh;
-  }
+  line-height: 1;
 }
 
 @media screen and (max-width: 450px) {
-  html {
-    font-size: 0.6rem;
-  }
-
   textarea {
     min-width: 0;
     width: 85vw;
-    /* height: 85vh; */
   }
-
   .counts {
-    margin: 0px 5px;
+    margin: inherit 5px;
+    font-size: 1.2rem;
   }
 
-  .footer {
-    height: 20px;
-    left: 80vw;
-    width: 20vw;
+  h1 {
+    font-size: 3rem;
+  }
+  a#gitlogo {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .counts {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 2.7rem;
+  }
+  a#gitlogo {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 306px) {
+  .counts {
+    font-size: 0.8rem;
+  }
+  h1 {
+    font-size: 2.3rem;
+  }
+  a#gitlogo {
+    font-size: 2rem;
   }
 }

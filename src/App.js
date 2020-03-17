@@ -6,7 +6,7 @@ const App = () => {
   const [characters, setCharacters] = useState(0)
   const [words, setWords] = useState(0)
   const [textValue, setTextValue] = useState(
-    'This should be 41 characters and 8 words.'
+    'This should be 117 characters and 21 words. Paste your entire exam in here to make sure you fulfill the requirements!'
   )
 
   useEffect(() => {
@@ -30,7 +30,16 @@ const App = () => {
         <h1>Counting onwords</h1>
         <Counts chars={characters} words={words} />
       </div>
-      <textarea onChange={changed} type="text" text="" value={textValue} />
+      <textarea
+        onChange={changed}
+        type="text"
+        text=""
+        value={textValue}
+        autocomplete="off"
+        autocorrect="off"
+        autocapitalize="off"
+        spellcheck="false"
+      />
       <Footer />
     </div>
   )

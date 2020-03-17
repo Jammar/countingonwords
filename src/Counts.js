@@ -6,10 +6,10 @@ const Counts = props => {
   return (
     <Fragment>
       <div className="counts">
-        Characters: <span>{chars}</span>
+        Characters<span>{chars}</span>
       </div>
       <div className="counts">
-        Words:<span>{words}</span>
+        Words<span>{words}</span>
       </div>
     </Fragment>
   )
